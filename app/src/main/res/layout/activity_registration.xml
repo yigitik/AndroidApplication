@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="#FAFAFA"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Conference Info Button -->
+        <Button
+            android:id="@+id/btnConferenceInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ℹ️ Konferans Bilgileri"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:padding="18dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#1976D2"
+            android:elevation="4dp"
+            android:drawablePadding="8dp" />
+
+        <!-- Section Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#E0E0E0"
+            android:layout_marginBottom="24dp" />
+
+        <!-- User ID Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kullanıcı ID:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etUserId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Benzersiz kullanıcı ID'si giriniz"
+            android:inputType="number"
+            android:padding="16dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            android:minHeight="56dp" />
+
+        <!-- Full Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tam Ad:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:id="@+id/etFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tam adınızı giriniz"
+            android:inputType="textPersonName"
+            android:padding="16dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            android:minHeight="56dp" />
+
+        <!-- Title Spinner -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unvan:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            android:minHeight="56dp" />
+
+        <!-- Registration Type Radio Group -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kayıt Tipi:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupRegistrationType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="20dp"
+            android:elevation="2dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+
+            <RadioButton
+                android:id="@+id/radioFull"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1 - Full"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radioStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2 - Student"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <RadioButton
+                android:id="@+id/radioNone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3 - None"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+        </RadioGroup>
+
+        <!-- Profile Photo ImageView -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Profil Fotoğrafı:"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginBottom="10dp" />
+
+        <ImageView
+            android:id="@+id/imageViewProfilePhoto"
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center_horizontal"
+            android:background="#E8E8E8"
+            android:scaleType="centerCrop"
+            android:contentDescription="Profil fotoğrafı"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@android:drawable/ic_menu_camera"
+            android:layout_marginBottom="12dp"
+            android:elevation="4dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="4dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📷 Fotoğraf çekmek için tıklayın"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="28dp" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="✓ Kayıt Ol"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:padding="20dp"
+            android:backgroundTint="#4CAF50"
+            android:elevation="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Navigation Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnGoToMain"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🏠 Ana Menü"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:layout_marginEnd="6dp"
+                android:backgroundTint="#9E9E9E"
+                android:elevation="2dp" />
+
+            <Button
+                android:id="@+id/btnGoToVerification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🔍 Doğrulama"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:layout_marginStart="6dp"
+                android:backgroundTint="#9E9E9E"
+                android:elevation="2dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
+

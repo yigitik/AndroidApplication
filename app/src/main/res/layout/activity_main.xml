@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="24dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Conference Registration System"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1976D2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="12dp" />
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konferans Kayıt ve Doğrulama Sistemi"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:gravity="center"
+        android:layout_marginBottom="56dp" />
+
+    <Button
+        android:id="@+id/btnRegistration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📝 Katılımcı Kaydı (Module A)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#4CAF50"
+        android:elevation="6dp" />
+
+    <Button
+        android:id="@+id/btnVerification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="🔍 Katılımcı Doğrulama (Module B)"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="#1976D2"
+        android:elevation="6dp" />
+
+</LinearLayout>
+
